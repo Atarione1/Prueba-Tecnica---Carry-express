@@ -5,7 +5,7 @@ import Login from '../components/login';
 
 
 
-export default function login() {
+export default function index() {
   return (
     <>
       <Stack.Screen options={{ title: 'Login', }} />
