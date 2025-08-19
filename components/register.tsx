@@ -1,6 +1,6 @@
 import { YStack, Input, Button, Text } from 'tamagui'
 import { useState } from 'react'
-import { Link } from 'expo-router'
+import { Link, router } from 'expo-router'
 import { createUserWithEmailAndPassword, getAuth } from 'firebase/auth'
 import { initializeApp } from 'firebase/app'
 import { firebaseConfig } from '~/firebase-config'
@@ -21,6 +21,7 @@ export default function Register() {
         console.log('Cuenta creada con éxito:', user);
         Alert.alert('Éxito', 'Cuenta creada con éxito');
         window.alert('Cuenta creada con éxito');
+        router.push("/")
       })
       .catch((error) => {
         const errorCode = error.code;
