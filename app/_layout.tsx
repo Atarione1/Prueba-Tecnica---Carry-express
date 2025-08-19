@@ -30,8 +30,7 @@ export default function RootLayout() {
     <TamaguiProvider config={config}>
 
       <Stack screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="login" />
-        <Stack.Screen name="map" />
+        <Stack.Screen name="index" />
 
       </Stack>
     </TamaguiProvider >
