@@ -77,7 +77,7 @@ export const Button = styled(ButtonTamagui, {
   fontSize: 16,
 });
 
-const config = createTamagui({
+export const config = createTamagui({
   light: {
     color: {
       background: 'gray',
